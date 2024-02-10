@@ -67,7 +67,7 @@ int main(int argc, char **argv)
 void b_shutdownPushed(Widget w, XtPointer client_data,
 					  XmPushButtonCallbackStruct *cbs)
 {
-	system("/usr/bin/sudo /sbin/poweroff"");
+	system("/usr/bin/sudo /sbin/poweroff");
 }
 
 void b_rebootPushed(Widget w, XtPointer client_data,
