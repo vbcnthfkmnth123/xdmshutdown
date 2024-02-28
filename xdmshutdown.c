@@ -67,12 +67,12 @@ int main(int argc, char **argv)
 void b_shutdownPushed(Widget w, XtPointer client_data,
 					  XmPushButtonCallbackStruct *cbs)
 {
-	system("/usr/bin/sudo /sbin/poweroff");
+	system("/usr/bin/systemctl shutdown");
 }
 
 void b_rebootPushed(Widget w, XtPointer client_data,
 					XmPushButtonCallbackStruct *cbs)
 {
-	system("/usr/bin/sudo /sbin/reboot");
+	system("/usr/bin/systemctl reboot");
 }
 
